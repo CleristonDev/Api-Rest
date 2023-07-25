@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Product;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -27,5 +27,5 @@ Route::get('/test', function (Request $request){
 });
 
 Route::get('/products', function(){
-    return Product::all();
+    return product::all();
 });
